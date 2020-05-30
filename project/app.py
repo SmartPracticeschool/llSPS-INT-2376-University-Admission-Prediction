@@ -20,7 +20,7 @@ def y_predict():
     print(prediction)
     output=prediction[0][0]
     
-    return render_template('index.html', prediction_text='University admission prediction {}'.format(output),showcase = prediction*100)
+    return render_template('index.html', prediction_text='probability of admissions {}'.format(output),showcase = prediction*100)
 
 @app.route('/predict_api',methods=['POST'])
 def predict_api():
